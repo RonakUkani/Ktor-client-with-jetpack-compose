@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Ktor-client-with-jetpack-compose"
 include(":app")
+include(":networking")
