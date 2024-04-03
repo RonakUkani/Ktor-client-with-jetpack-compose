@@ -11,11 +11,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.sample.ktorclient.ui.theme.KtorclientwithjetpackcomposeTheme
+import com.sample.ktorclient.viewmodel.ProductsViewmodel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : ComponentActivity() {
+    private val viewmodel by viewModel<ProductsViewmodel>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            viewmodel.getProducts()
+
             KtorclientwithjetpackcomposeTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
@@ -25,6 +31,7 @@ class MainActivity : ComponentActivity() {
                     Greeting("Android")
                 }
             }
+
         }
     }
 }
