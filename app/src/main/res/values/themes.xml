@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Ktorclientwithjetpackcompose" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Ktorclientwithjetpackcompose" parent="android:Theme.Material.Light.NoActionBar" >
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/ic_cart_app_logo</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary</item>
+        <item name="colorAccent">@color/color_primary</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+    </style>
+
 </resources>
