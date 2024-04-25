@@ -60,7 +60,6 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.koin.android)
-    implementation(libs.androidx.navigation)
 
     implementation(project(":networking"))
 
